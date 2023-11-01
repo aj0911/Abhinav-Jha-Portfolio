@@ -11,7 +11,7 @@ const Header = () => {
         'Testimonials',
         'Contact'
     ]
-    const header = useRef()
+    const header = useRef();
     document.addEventListener('scroll',()=>{
         if(window.scrollY>20){
             header.current.classList.add('sticky')
@@ -31,6 +31,11 @@ const Header = () => {
             }
             <button>Resume</button>
         </nav>
+        <div onClick={()=>header.current.classList.toggle('active')} className="hamburger">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
     </header>
   )
 }

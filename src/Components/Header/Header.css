@@ -18,36 +18,36 @@ header .logo{
     font-weight: 700;
     font-size: 2.5rem;
     transition: var(--transition);
+    z-index: 5;
 }
 
-nav{
+header nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
-nav .menu{
+header nav .menu{
     color: var(--textSecondaryColor);
     font-size: 1.2rem;
     font-weight: 800;
     text-transform: capitalize;
     transition: var(--transition);
 }
-nav .menu:hover{
+header nav .menu:hover{
     color: var(--textSecondaryColorDark);
     transform: scale(1.05);
 }
-nav .menu:hover span{
+header nav .menu:hover span{
     color: var(--textSecondaryColor);
 }
-nav .menu span{
+header nav .menu span{
     color: var(--textSecondaryColorDark);
     font-size: 1rem;
 }
 
-nav button{
+header nav button{
     border: 2px solid var(--textSecondaryColor);
     color: var(--textSecondaryColor);
     font-size: 1.2rem;
@@ -57,8 +57,11 @@ nav button{
     margin-left: 2rem;
     transition: var(--transition);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav button:hover{
+header nav button:hover{
     color: var(--textSecondaryColorDark);
     background-color: var(--textSecondaryColor);
 }
@@ -66,4 +69,136 @@ nav button:hover{
 header .logo:hover{
     transform: scale(1.05);
     color: var(--textColor);
+}
+
+header nav .hamburger{
+    display: none;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px){
+    header .logo{
+        font-size: 3rem;
+    }
+    header nav{
+        position: absolute;
+        top: -100vh;
+        left: 0%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bgColor);
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        transition: all 1s;
+    }
+    header.active nav{
+        top: 0;
+    }
+    header.active nav .menu{
+        font-size: 2rem;
+        animation-duration:4s;
+    }
+    header.active nav .menu:nth-child(2n){
+        animation-name: animateRight;
+    }
+    header.active nav .menu:nth-child(2n-1){
+        animation-name: animateLeft;
+    }
+    header nav .menu:nth-child(2n){
+        animation-name: animateLeft;
+    }
+    header nav .menu:nth-child(2n-1){
+        animation-name: animateRight;
+    }
+    header.active nav button{
+        font-size: 2rem;
+        margin-left: 0;
+        animation:animateDown 4s;
+    }
+    header nav .menu span{
+        font-size: 1.8rem;
+    }
+    header .hamburger{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 20px;
+        right: 5%;
+        .line{
+            width: 100%;
+            height: 5px;
+            background-color: var(--textSecondaryColor);
+            border-radius: 50px;
+            transition: var(--transition);
+        }
+        .line:nth-child(2){
+            width: 80%;
+        }
+    }
+    header.active .hamburger{
+        gap: 0;
+        .line{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+        }
+    }
+    header.active .hamburger .line:nth-child(2){
+        opacity: 0;
+    }
+    header.active .hamburger .line:nth-child(1){
+        transform: rotate(45deg);
+    }
+    header.active .hamburger .line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    header .logo{
+        font-size: 2rem;
+    }
+    header .hamburger{
+        width: 30px;
+        height: 30px;
+        gap: 5px;
+        .line{
+            height: 3px;
+        }
+    }
+
+    header.active nav{
+        gap: 1rem;
+    }
+    header.active nav .menu{
+        font-size: 1.2rem;
+    }
+    header.active nav button{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    header nav .menu span{
+        font-size: 1rem;
+    }
+    header nav{
+        gap: 1rem;
+    }
+    header nav .menu{
+        font-size: 1.2rem;
+    }
+    header nav button{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    header nav .menu span{
+        font-size: 1rem;
+    }
 }

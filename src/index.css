@@ -29,3 +29,58 @@ html{
 body{
     background-color: var(--bgColor);
 }
+
+
+/* For Tablets */
+@media screen and (max-width:999px){
+
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+
+}
+
+@keyframes animateLeft {
+    0%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animateRight {
+    0%{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animateDown {
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animateTop {
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
