@@ -7,10 +7,11 @@ header{
     position: fixed;
     width: 100%;
     background-color: var(--bgColor);
+    z-index: 2;
 }
 
 header.sticky{
-    box-shadow: 10px 10px 50px rgba(0, 228, 245, .1);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, .6);
 }
 
 header .logo{
@@ -34,6 +35,8 @@ header nav .menu{
     font-weight: 800;
     text-transform: capitalize;
     transition: var(--transition);
+    position: relative;
+    padding-bottom: 10px;
 }
 header nav .menu:hover{
     color: var(--textSecondaryColorDark);
@@ -45,6 +48,20 @@ header nav .menu:hover span{
 header nav .menu span{
     color: var(--textSecondaryColorDark);
     font-size: 1rem;
+}
+
+header nav .menu::after{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--textSecondaryColor);
+    content: '';
+    transition: var(--transition);
+}
+header nav .menu:hover::after{
+    width: 100%;
 }
 
 header nav button{
@@ -64,6 +81,7 @@ header nav button{
 header nav button:hover{
     color: var(--textSecondaryColorDark);
     background-color: var(--textSecondaryColor);
+    transform: scale(1.05);
 }
 
 header .logo:hover{
@@ -71,7 +89,7 @@ header .logo:hover{
     color: var(--textColor);
 }
 
-header nav .hamburger{
+header .hamburger{
     display: none;
 }
 
@@ -91,6 +109,7 @@ header nav .hamburger{
         justify-content: center;
         gap: 2rem;
         transition: all 1s;
+        overflow: hidden;
     }
     header.active nav{
         top: 0;

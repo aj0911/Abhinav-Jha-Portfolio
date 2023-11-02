@@ -1,16 +1,8 @@
 import React, { useRef } from 'react'
 import './Header.css'
+import { Menus } from '../Helper/Constants';
 
 const Header = () => {
-    const menus = [
-        'About',
-        'Education',
-        'Experience',
-        'Skills',
-        'Projects',
-        'Testimonials',
-        'Contact'
-    ]
     const header = useRef();
     document.addEventListener('scroll',()=>{
         if(window.scrollY>20){
@@ -22,11 +14,11 @@ const Header = () => {
     })
   return (
     <header ref={header}>
-        <a href='#About' className="logo">Aj.</a>
+        <a href='#Hero' className="logo">Aj.</a>
         <nav>
             {
-                menus.map((menu,index)=>(
-                    <a key={index} href={`#${menu}`} className='menu'><span>{index+1}.</span>{menu}</a>
+                Menus.map((menu,index)=>(
+                    <a onClick={()=>header.current.classList.toggle('active')} key={index} href={`#${menu}`} className='menu'><span>{index+1}.</span>{menu}</a>
                 ))
             }
             <button>Resume</button>
