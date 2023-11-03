@@ -1,0 +1,154 @@
+#About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15% 50px 15%;
+    overflow: hidden;
+    gap: 2rem;
+}
+#About .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#About .box .left{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+#About .box .left p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--textSecondaryColorDark);
+}
+#About .box .left button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--textSecondaryColor);
+    color: var(--textSecondaryColorDark);
+    font-size: 1rem;
+    .icon{
+        font-size: 1.5rem;
+        animation: animateDownIcon .2s alternate-reverse infinite;
+        z-index: 1;
+    }
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+#About .box .left button h3{
+    z-index:1;
+}
+#About .box .left button::after{
+    position: absolute;
+    left: 0;
+    background-color: var(--textSecondaryColorDark);
+    content: '';
+    z-index: 0;
+}
+#About .box .left button:hover{
+    color: var(--textSecondaryColor);
+    transform: scale(1.05);
+}
+#About .box .left button:hover::after{
+    animation: animateButtonHover .5s ease-in-out forwards;
+}
+#About .box .right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About .box .right .img-div{
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px dotted var(--textSecondaryColor);
+    position: relative;
+    overflow: hidden;
+}
+#About .box .right .img-div img{
+    object-fit: cover;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+#About .box .right .img-div::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: 'Hover Me';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--textSecondaryColor);
+    opacity: .5;
+    font-size: 1.5rem;
+}
+#About .box .right .img-div:hover::after{
+    animation: animateImageHover .4s ease-in forwards;
+}
+/* For Tablets */
+@media screen and (max-width:999px){
+    #About{
+        padding: 0 5% 50px 5%;
+    }
+    #About .box{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #About .box .left,#About .box .right{
+        width: 100%;
+    }
+    #About .box .right .img-div{
+        width: 400px;
+        height: 400px;
+    }
+    #About .box .right .img-div img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    #About .box .left button{
+        font-size: 1rem;
+    }
+    #About .box .right .img-div{
+        width: 200px;
+        height: 200px;
+    }
+    #About .box .right .img-div img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes animateImageHover {
+    0%{
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        content: '';
+    }
+}

@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer>
-        <p>Designed By Abhinav Jha</p>
+        <p>Designed By Abhinav Jha | 2023</p>
     </footer>
   )
 }

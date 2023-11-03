@@ -6,6 +6,7 @@ footer{
     padding: 20px 5%;
     background-color: var(--bgColor);
     box-shadow: 10px 10px 50px rgba(0, 0, 0, .6);
+    z-index: 2;
 }
 
 footer p{

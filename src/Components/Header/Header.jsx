@@ -21,7 +21,7 @@ const Header = () => {
                     <a onClick={()=>header.current.classList.toggle('active')} key={index} href={`#${menu}`} className='menu'><span>{index+1}.</span>{menu}</a>
                 ))
             }
-            <button>Resume</button>
+            <button onClick={()=>window.open(require('../../Assets/resume.pdf'),'_blank')}>Resume</button>
         </nav>
         <div onClick={()=>header.current.classList.toggle('active')} className="hamburger">
             <div className="line"></div>
