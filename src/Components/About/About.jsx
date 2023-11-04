@@ -18,7 +18,7 @@ const About = () => {
             </div>
             <div className="right">
                 <div className="img-div">
-                    <img src={require('../../Assets/me.jpg')} alt="" />
+                    <img src={require('../../Assets/me.png')} alt="" />
                 </div>
             </div>
         </div>

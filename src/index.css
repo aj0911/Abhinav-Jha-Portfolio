@@ -30,10 +30,22 @@ body{
     background-color: var(--bgColor);
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15% 100px 15%;
+    .title{
+        margin-bottom: 2rem;
+    }
+}
 
 /* For Tablets */
 @media screen and (max-width:999px){
-
+    .container{
+        padding: 0 5% 100px 5%;
+    }
 }
 
 /* For Mobiles */

@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 0 15% 50px 15%;
+    padding: 0 15% 100px 15%;
     overflow: hidden;
     gap: 2rem;
 }
@@ -76,6 +76,7 @@
     border: 5px dotted var(--textSecondaryColor);
     position: relative;
     overflow: hidden;
+    padding: 10px;
 }
 #About .box .right .img-div img{
     object-fit: cover;
@@ -89,6 +90,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    border-radius: 50%;
     content: 'Hover Me';
     display: flex;
     justify-content: center;
@@ -103,7 +105,7 @@
 /* For Tablets */
 @media screen and (max-width:999px){
     #About{
-        padding: 0 5% 50px 5%;
+        padding: 0 5% 100px 5%;
     }
     #About .box{
         flex-direction: column;
@@ -111,10 +113,6 @@
     }
     #About .box .left,#About .box .right{
         width: 100%;
-    }
-    #About .box .right .img-div{
-        width: 400px;
-        height: 400px;
     }
     #About .box .right .img-div img{
         width: 400px;
@@ -126,10 +124,6 @@
 @media screen and (max-width:599px){
     #About .box .left button{
         font-size: 1rem;
-    }
-    #About .box .right .img-div{
-        width: 200px;
-        height: 200px;
     }
     #About .box .right .img-div img{
         width: 200px;

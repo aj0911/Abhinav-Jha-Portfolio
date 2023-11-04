@@ -1,0 +1,131 @@
+#Experience .box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#Experience .box .companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+#Experience .box .companies button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-left: 3px solid var(--textSecondaryColorDark);
+    color: var(--textSecondaryColorDark);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: var(--transition);
+}
+#Experience .box .companies button:hover{
+    background-color: var(--textSecondaryColorDark);
+    color: var(--textColor);
+}
+#Experience .box .companies button.active{
+    border-left: 3px solid var(--textSecondaryColor);
+    color: var(--textSecondaryColor);
+}
+#Experience .box .data{
+    width: 75%;
+    padding-left:2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#Experience .box .data .top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+#Experience .box .data .top h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--textSecondaryColor);
+    text-transform: capitalize;
+}
+#Experience .box .data .top h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--textColor);
+    text-transform: capitalize;
+}
+
+#Experience .box .data > p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--textSecondaryColorDark);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+#Experience .box .data .bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+    flex-direction: column;
+    width: 100%;
+    .text{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        .point{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--textSecondaryColor);
+        }
+    }
+}
+#Experience .box .data .bottom p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--textSecondaryColorDark);
+    width: calc(100% - 10px - 1rem);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px){
+    
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    #Experience .box{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #Experience .box .companies{
+        width: 100%;
+    }
+    #Experience .box .data{
+        width: 100%;
+        padding-left: 0;
+        .top{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+    }
+    #Experience .box .companies button {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+    #Experience .box .data .top h3,#Experience .box .data .top h4 {
+        font-size: 1.1rem;
+    }    
+    #Experience .box .data  p {
+        font-size: .9rem;
+    }    
+}
