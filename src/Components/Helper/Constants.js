@@ -19,7 +19,7 @@ export const education = [
         time:'2022-2026',
         name:'Delhi Technological University',
         degree:`Bachelor's Degree (B.Tech)`,
-        passingMarks:'9.00 CGPA'
+        passingMarks:'9.00 CGPA (Till 2nd Sem)'
     },
     {
         time:'2020-2022',
@@ -184,4 +184,145 @@ export const skills = [
             },
         ]
     }
+]
+
+export const projects = [
+    {
+        header:'Web Development',
+        projects:[
+            {
+                title:'Buy Market - Ecommerce',
+                img:require('../../Assets/buymarket.png'),
+                desc:'The MERN Stack Ecommerce Project ( Buy Market) with user authentication, clean UI, Cart System which uses react redux for state management, jwt Tokens , Nodemailer for sending Email, Recharts js for charts and many more technologies.',
+                techStack:'React Node MongoDb Express Redux CSS',
+                github:'https://github.com/aj0911/BuyMarket',
+                link:'https://buymarket.cyclic.app/'
+            },
+            {
+                title:'180 Degrees Consulting Hindu',
+                img:require('../../Assets/180dchindu.png'),
+                desc:'Developed a dynamic React JS frontend and integrated Realtime Firebase Database for seamless data management. Utilized Firebase Storage for efficient image/file storage and Email.js for enhanced communication. Result: a robust, responsive website showcasing society activities effectively.',
+                techStack:'React CSS Firebase Redux',
+                github:'private',
+                link:'https://180dchindu.vercel.app/'
+            },
+            {
+                title:'CV Generator App',
+                img:require('../../Assets/cvgenerator.png'),
+                desc:`As a React.js developer, I designed and implemented a CV generator app, streamlining the resume creation process. Engineered user-friendly interfaces and dynamic content sections to enhance customization, enabling users to effortlessly build professional CVs.`,
+                techStack:'React CSS',
+                github:'https://github.com/aj0911/ResumeBuilder',
+                link:'https://cvgenerator-theta.vercel.app/'
+            },
+            {
+                title:'Bubbl Social (Comming Soon)',
+                img:require('../../Assets/bubblsocial.png'),
+                desc:`During my internship, I crafted Bubbl Social's company website, focusing on their flagship product, the Bubbl Social mobile app. Leveraging React.js, I seamlessly integrated features, ensuring a dynamic and engaging user experience.`,
+                techStack:'React CSS',
+                github:'private',
+                link:'https://bubblsocial.vercel.app/'
+            },
+            {
+                title:'Weather Forcast App',
+                img:require('../../Assets/weather.png'),
+                desc:`I designed a weather forecast app using React and WeatherAPI, providing users with real-time weather updates. With an intuitive interface, the app seamlessly fetches and displays accurate weather information, enhancing user accessibility.`,
+                techStack:'React CSS WeatherAPI',
+                github:'https://github.com/aj0911/Weather-Forcast',
+                link:'https://weatherprojectbyabhinavjha.vercel.app/'
+            },
+            {
+                title:'Mechlife',
+                img:require('../../Assets/mechlife.png'),
+                desc:`MechLife, a premier car repair agency, boasts a dynamic website developed with React.js. Offering seamless navigation and engaging interfaces, it enhances user experience while showcasing MechLife's commitment to excellence in automotive services.`,
+                techStack:'React CSS',
+                github:'https://github.com/aj0911/MechLife',
+                link:'https://mechlife.vercel.app/'
+            },
+            {
+                title:'GovBuzz',
+                img:require('../../Assets/govbuzz.png'),
+                desc:`GovBuzz, our SIH hackathon endeavor, empowers civic engagement. With React, we developed a responsive platform for citizens to stay informed, voice concerns, and foster a collaborative community, enhancing democratic participation.`,
+                techStack:'React CSS',
+                github:'https://github.com/aj0911/sih-23-webApp',
+                link:'https://govbuzz.vercel.app/'
+            },
+            {
+                title:'Modern Portfolio',
+                img:require('../../Assets/portfolio.png'),
+                desc:`Elevate your online presence with my Modern Portfolio project, skillfully crafted using React. Experience a sleek and responsive design showcasing my expertise, projects, and achievements in a visually captivating manner.`,
+                techStack:'React CSS',
+                github:'https://github.com/aj0911/React-Portfolio-Project',
+                link:'https://react-portfolio-project-eight.vercel.app/'
+            },
+            {
+                title:'Mehndi Artist Portfolio',
+                img:require('../../Assets/mehndiartist.png'),
+                desc:`Designed a captivating Henna Artist Portfolio using HTML, CSS, and JS. Intuitive navigation, responsive layout, and dynamic elements showcase the artist's talent. A visually appealing web presentation that captures the essence of henna artistry.`,
+                techStack:'HTML CSS Javascript',
+                github:'https://github.com/aj0911/Rahul-Jha-Artist',
+                link:'https://rahuljha-mehndiartist.netlify.app/'
+            },
+            {
+                title:'Musicology',
+                img:require('../../Assets/musicology.png'),
+                desc:`For the Musicology project, I employed React.js to create a vibrant and interactive music platform. The application seamlessly blends user-friendly design with innovative features, offering a dynamic and immersive musical experience.`,
+                techStack:'HTML CSS Javascript',
+                github:'https://github.com/aj0911/Musicology',
+                link:'https://musicologybyarsolutions.netlify.app/'
+            },
+        ]
+    },
+    {
+        header:'App Development',
+        projects:[
+            {
+                title:'TripIt - Tour Planner',
+                img:require('../../Assets/tripit.png'),
+                desc:`I've successfully built a project using React Native for the frontend, Firebase for the backend, and Redux Toolkit for efficient state management. This app excels in tasks such as hotel booking, user authentication, personalized favorite hotel selections, and more.`,
+                techStack:'ReactNative Firebase Redux',
+                github:'https://github.com/aj0911/TripIt',
+                link:'https://expo.dev/accounts/ajsol0911/projects/TripIt/builds/1169d192-04df-4646-9c37-bc25dc9ca57e'
+            },
+            {
+                title:'Buy Market App',
+                img:require('../../Assets/buymarketapp.png'),
+                desc:`This is my first step into app development, where I'm creating the look and feel of a mobile app using React Native. I've used a cool thing called React hooks to handle how the app behaves and tapped into different helpful tools like expo-locations, expo-splash-screen, and more to make things work smoothly.`,
+                techStack:'ReactNative Stylesheet',
+                github:'https://github.com/aj0911/BuyMarketApp',
+                link:'https://expo.dev/accounts/ajsol0911/projects/buyMarketApp/builds/eee17083-ad55-400f-971f-64a94aa62431'
+            },
+            {
+                title:'Scanny - QR Scanner',
+                img:require('../../Assets/scanny.png'),
+                desc:`I spearheaded a QR code scanner project using React Native Expo, seamlessly blending efficiency and simplicity. The application swiftly scans QR codes, offering a seamless experience with a user-friendly interface for swift interactions.`,
+                techStack:'ReactNative Stylesheet',
+                github:'https://github.com/aj0911/CodeClauseInternship_BarCodeScanner',
+                link:'https://expo.dev/accounts/ajsol0911/projects/barCodeScanner/builds/553893a3-0c94-4070-8b4d-e9eb9618f178'
+            },
+        ]
+    },
+    {
+        header:'Machine Learning',
+        projects:[
+            {
+                title:'Movie Recommendation',
+                img:require('../../Assets/movieRecommendation.png'),
+                desc:`Developed a movie recommendation website utilizing a Python-based machine learning model trained on 5000 movies. Employed a count vectorizer for tag conversion, calculating cosine distances to suggest the top 5 most similar films. Streamlit powers the user-friendly interface.`,
+                techStack:'Python Numpy Pandas Streamlit',
+                github:'https://github.com/aj0911/Movie-Recommendation',
+                link:'https://movie-recommendation-by-abhinav.streamlit.app/',
+                paper:'https://drive.google.com/file/d/15MHGXlrlrFLrGON06GAkax2RzDqautjy/view'
+            },
+            {
+                title:'Spam Classifier',
+                img:require('../../Assets/emailspam.png'),
+                desc:`I engineered a spam classifier using Python's 'sklearn' and the Multinomial Naive Bayes algorithm, boasting a 97% accuracy and flawless 100% precision. Integrated into a Streamlit-developed website, it discerns spam messages with precision.`,
+                techStack:'Python Numpy Pandas Streamlit',
+                github:'https://github.com/aj0911/SMS-Email-Spam-Detector-',
+                link:'https://emailspamdetector.streamlit.app/',
+                paper:'https://drive.google.com/file/d/12ZvxwJWak94-t21XT2p6mZmc93cwLxyY/view'
+            },
+        ]
+    },
+
 ]
