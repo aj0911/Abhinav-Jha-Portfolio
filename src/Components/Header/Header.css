@@ -116,7 +116,7 @@ header .hamburger{
     }
     header.active nav .menu{
         font-size: 2rem;
-        animation-duration:4s;
+        animation-duration:1.5s;
     }
     header.active nav .menu:nth-child(2n){
         animation-name: animateRight;
@@ -133,7 +133,7 @@ header .hamburger{
     header.active nav button{
         font-size: 2rem;
         margin-left: 0;
-        animation:animateDown 4s;
+        animation:animateDown 1.5s;
     }
     header nav .menu span{
         font-size: 1.8rem;

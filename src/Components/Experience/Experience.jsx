@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Experience.css'
 import Title from '../Helper/Title'
 import { experience } from '../Helper/Constants'
 
 const Experience = () => {
     const [companyIndex,setCompanyIndex] = useState(0);
+    const [animation,setAnimation] = useState(true);
+    useEffect(()=>{
+      setAnimation(!animation);
+    },[companyIndex])
   return (
     <div id="Experience" className='container'>
         <Title title={'Experience'} index={3}/>
@@ -18,7 +22,7 @@ const Experience = () => {
                     ))
                 }
             </div>
-            <div className="data">
+            <div className={`data ${(animation)?'animetrue':'animefalse'}`}>
                 <div className="top">
                     <h3>{experience[companyIndex].role}</h3>
                     <h4>@ {experience[companyIndex].companyName}</h4>

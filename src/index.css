@@ -23,6 +23,7 @@ html{
     --textColor:#fff;
     --textSecondaryColor:#00E4F5;
     --textSecondaryColorDark:#45506E;
+    --bgColorLight:#062440;
     --transition:all .4s;
 }
 
@@ -57,20 +58,25 @@ body{
     0%{
         transform: translateX(-10px);
         opacity: 0;
+        filter: blur(33px);
     }
     100%{
         transform: translateX(0px);
         opacity: 1;
+        filter: blur(0);
+
     }
 }
 
 @keyframes animateRight {
     0%{
         transform: translateX(10px);
+        filter: blur(33px);
         opacity: 0;
     }
     100%{
         transform: translateX(0px);
+        filter: blur(0);
         opacity: 1;
     }
 }
@@ -78,10 +84,12 @@ body{
 @keyframes animateDown {
     0%{
         transform: translateY(10px);
+        filter: blur(33px);
         opacity: 0;
     }
     100%{
         transform: translateY(0px);
+        filter: blur(0);
         opacity: 1;
     }
 }
@@ -89,10 +97,12 @@ body{
 @keyframes animateTop {
     0%{
         transform: translateY(-10px);
+        filter: blur(33px);
         opacity: 0;
     }
     100%{
         transform: translateY(0px);
+        filter: blur(0);
         opacity: 1;
     }
 }

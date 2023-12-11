@@ -324,5 +324,28 @@ export const projects = [
             },
         ]
     },
+]
 
+export const TestimonialsData = [
+    {
+        name:'Mr. Alakh Pandey',
+        designation:'Founder',
+        companyName:'Physics Wallah',
+        img:require('../../Assets/pwskills.jpg'),
+        desc:`This is to certify that Mr/Ms/Mrs Abhinav Jha has successfully completed   internship program from 17th March 2023 to 19th May 2023 in E-commerce Applicationm at PHYSICS WALLAH PVT. LTD. During their internship programme with us, they demonstrated exceptional skills with a self-motivated attitude to learn new things and implement them end to end with all of our mentioned industrial standards. Their performance was excellent and was able to complete the project successfully on time.`
+    },
+    {
+        name:'Mr. Tarun Jindal',
+        designation:'Branch Manager',
+        companyName:'180 Degrees Consulting Hindu',
+        img:require('../../Assets/180dc.jpg'),
+        desc:`Throughout the course of the project, Abhinav exhibited a deep understanding of web development principles and a keen eye for detail. His ability to create an intuitive user experience, coupled with a visually appealing design, greatly contributed to the success of our organisation's online presence.I strongly recommend that he would certainly prove to be an asset to any organisation. I wish him all the best for his future endeavours.`
+    },
+    {
+        name:'Team CodeClause',
+        img:require('../../Assets/codeclause.jpg'),
+        desc:`Throughout the internship, He has demonstrated excellent communication skills, a curious mind, and admirable social awareness. He also performed extremely
+        well during the internship and showed excellent skills as seen in the project
+        submission and participation in the regular activities. He is always willing to put a unique approach to the projects that are assigned, while also adhering to the guidelines and rules. With this, we will take this opportunity to wish Abhinav Jha ,all luck for future endeavors and hope for a bright future ahead.`
+    },
 ]

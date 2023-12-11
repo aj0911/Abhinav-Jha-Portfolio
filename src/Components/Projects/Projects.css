@@ -1,0 +1,158 @@
+#Projects .upper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#Projects .upper button{
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--textSecondaryColorDark);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#Projects .upper button:hover{
+    background-color: var(--textSecondaryColor);
+}
+#Projects .upper button.active{
+    border-bottom: 2px solid var(--textSecondaryColor);
+    color: var(--textSecondaryColor);
+}
+#Projects .upper button.active:hover{
+    background-color: transparent;
+}
+#Projects .lower{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#Projects .lower .project{
+    width: calc( calc(100% - 2rem) / 3 );
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: var(--bgColorLight);
+    border-radius: 10px;
+    transition: .3s;
+}
+#Projects .lower .project.animetrue{
+    animation: animateDown 1s ease;
+}
+#Projects .lower .project.animefalse{
+    animation: animateTop 1s ease;
+}
+#Projects .lower .project:hover{
+    border-bottom: 10px solid var(--textSecondaryColor);
+    transform: scale(1.05);
+    box-shadow: 20px 20px 50px rgba(0,0,0,.4);
+}
+#Projects .lower .project .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#Projects .lower .project .top a{
+    font-size: 1.3rem;
+    color: var(--textSecondaryColor);
+}
+
+#Projects .lower .project img{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+#Projects .lower .project .down{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+    flex-direction: column;
+    width: 100%;
+}
+#Projects .lower .project .down h3{
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#Projects .lower .project .down p{
+    font-size: .8rem;
+    color: var(--textSecondaryColorDark);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#Projects .lower .project .down h5{
+    font-size: .9rem;
+    color: var(--textSecondaryColor);
+    font-weight: 700;
+    text-transform: capitalize;
+    align-self: flex-end;
+}
+
+#Projects .lower .project .down a{
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--textSecondaryColorDark);
+    background-color: var(--textSecondaryColor);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#Projects .lower .project .down a:hover{
+    color: var(--textSecondaryColor);
+    background-color: var(--textSecondaryColorDark);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px){
+    #Projects .lower .project {
+        width: calc(50% - 1rem);
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    #Projects .upper {
+        gap: .5rem;
+        justify-content: center;
+    }
+    #Projects .upper button{
+        padding: 0 0 5px 0;
+        font-size: 1rem;
+        width: calc( calc(100% - 1rem) / 3);
+    }
+    #Projects .lower{
+        gap: 2rem;
+    }
+    #Projects .lower .project {
+        width: 100%;
+    }
+    #Projects .lower .project .top a {
+        font-size: 1.1rem;
+    }
+    #Projects .lower .project .down h3 {
+        font-size: 1.1rem;
+    }
+    #Projects .lower .project .down a {
+        font-size: .9rem;
+    }
+}
