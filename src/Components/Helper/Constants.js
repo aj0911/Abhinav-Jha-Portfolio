@@ -1,3 +1,7 @@
+import { FaCss3, FaFigma, FaGit, FaGithub, FaHtml5, FaJava, FaJs, FaNodeJs, FaPython, FaReact } from "react-icons/fa"
+import { SiC, SiCplusplus, SiDjango, SiExpress, SiFirebase, SiFlutter, SiMongodb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiRedux, SiScikitlearn, SiStreamlit } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+
 export const Menus = [
     'About',
     'Education',
@@ -53,4 +57,131 @@ export const experience = [
         desc1:`This is my First Internship which taught me about the end to end solutions for the projects, How to design the high/low level design solutions, wireframe and many other solutions.`,
         desc2:`I have delivered end to end solution for a web Development project by which I am able to learn alot of Web concepts. I have used the latest technology for my website i.e MERN (MongoDB - Express Js - React Js - Node Js).`
     },
+]
+
+export const skills = [
+    {
+        title:'Web Development',
+        xp:'2021-02-17',
+        skill:[
+            {
+                name:'React',
+                icon:<FaReact class = "icon" />
+            },
+            {
+                name:'Node Js',
+                icon:<FaNodeJs class = "icon" />
+            },
+            {
+                name:'Express Js',
+                icon:<SiExpress class = "icon" />
+            },
+            {
+                name:'MongoDb',
+                icon:<SiMongodb class = "icon" />
+            },
+            {
+                name:'React Redux',
+                icon:<SiRedux class = "icon" />
+            },
+            {
+                name:'HTML',
+                icon:<FaHtml5 class = "icon" />
+            },
+            {
+                name:'CSS',
+                icon:<FaCss3 class = "icon" />
+            },
+            {
+                name:'Javascript',
+                icon:<FaJs class = "icon" />
+            },
+            {
+                name:'Django',
+                icon:<SiDjango class = "icon" />
+            },
+        ]
+    },
+    {
+        title:'App Development',
+        xp:'2023-07-20',
+        skill:[
+            {
+                name:'React Native',
+                icon:<TbBrandReactNative class = "icon" />
+            },
+            {
+                name:'Flutter',
+                icon:<SiFlutter class = "icon" />
+            },
+            {
+                name:'Firebase',
+                icon:<SiFirebase class = "icon" />
+            },
+        ]
+    },
+    {
+        title:'Machine Learning',
+        xp:'2023-10-06',
+        skill:[
+            {
+                name:'Python',
+                icon:<FaPython class = "icon" />
+            },
+            {
+                name:'Scikit-learn',
+                icon:<SiScikitlearn class = "icon" />
+            },
+            {
+                name:'Numpy',
+                icon:<SiNumpy class = "icon" />
+            },
+            {
+                name:'Pandas',
+                icon:<SiPandas class = "icon" />
+            },
+            {
+                name:'Streamlit',
+                icon:<SiStreamlit class = "icon" />
+            },
+        ]
+    },
+    {
+        title:'Other Skills',
+        xp:'2021-05-06',
+        skill:[
+            {
+                name:'Java',
+                icon:<FaJava class = "icon" />
+            },
+            {
+                name:'C',
+                icon:<SiC class = "icon" />
+            },
+            {
+                name:'C++',
+                icon:<SiCplusplus class = "icon" />
+            },
+            {
+                name:'Git',
+                icon:<FaGit class = "icon" />
+            },
+            {
+                name:'Github',
+                icon:<FaGithub class = "icon" />
+            },
+            {
+                name:'MySQL',
+                icon:<SiMysql class = "icon" />
+            },
+            {
+                name:'Postgre Sql',
+                icon:<SiPostgresql class = "icon" />
+            },
+            {
+                name:'Figma',
+                icon:<FaFigma class = "icon" />
+            },
+        ]
+    }
 ]

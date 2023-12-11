@@ -1,0 +1,134 @@
+#Skills .box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+#Skills .box .skillSet{
+    width: calc(25% - 1.5rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Skills .box .skillSet h3{
+    font-size: 1.5rem;
+    color: var(--textSecondaryColor);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#Skills .box .skillSet p{
+    font-size: 1rem;
+    color: var(--textSecondaryColorDark);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+#Skills .box .skillSet .skillBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+#Skills .box .skillSet .skillBox .skill{
+    width: calc(50% - 0.5rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+#Skills .box .skillSet .skillBox .skill .icon{
+    color: var(--textColor);
+    font-size: 1.5rem;
+}
+#Skills .box .skillSet .skillBox .skill .iconDiv{
+    border: 3px solid var(--textSecondaryColorDark);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+#Skills .box .skillSet .skillBox .skill:hover .iconDiv{
+    transform: scale(1.05);
+}
+#Skills .box .skillSet .skillBox .skill:hover .iconDiv::after{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    content: '';
+    background-color: var(--textSecondaryColor);
+    animation: animateIcon .5s ease-in-out infinite;
+}
+#Skills .box .skillSet .skillBox .skill h5{
+    color: var(--textSecondaryColorDark);
+    font-size: .9rem;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    transition: var(--transition);
+    width: 60%;
+}
+#Skills .box .skillSet .skillBox .skill:hover h5{
+    color: var(--textSecondaryColor);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px){
+    #Skills .box .skillSet{
+        width: calc(50% - 1rem);
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    #Skills .box .skillSet{
+        width: 100%;
+        align-items: flex-start;
+    }
+    #Skills .box .skillSet h3 {
+        font-size: 1.1rem;
+    }
+    #Skills .box .skillSet p {
+        font-size: .9rem;
+    }
+    #Skills .box .skillSet .skillBox .skill h5{
+        width: 100%;
+        font-size: .7rem;
+    }
+    #Skills .box .skillSet .skillBox .skill .icon {
+        font-size: 1.3rem;
+    }
+    #Skills .box .skillSet .skillBox .skill .iconDiv {
+        padding: 7px;
+    }
+    #Skills .box .skillSet .skillBox .skill:hover .iconDiv::after{
+        height: 10%;
+    }
+    #Skills .box .skillSet .skillBox .skill {
+        width: auto;
+        align-items: flex-start;
+    }
+}
+
+@keyframes animateIcon {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 90%;
+    }
+}
