@@ -17,7 +17,7 @@ const Hero = () => {
           <h2>Abhinav Jha</h2>
           <h4>I develop scalable applications and softwares using latest technologies. </h4>
           <h6>I code within required coding standards and styles to serve the exact need</h6>
-          <button>
+          <button onClick={()=>document.getElementById("Contact").scrollIntoView()}>
             <h3>Contact Me</h3>
             <TbArrowBigRightLines className='icon'/>
           </button>
