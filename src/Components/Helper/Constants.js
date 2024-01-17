@@ -1,5 +1,5 @@
 import { FaCss3, FaFigma, FaGit, FaGithub, FaHtml5, FaJava, FaJs, FaNodeJs, FaPython, FaReact } from "react-icons/fa"
-import { SiC, SiCplusplus, SiDjango, SiExpress, SiFirebase, SiFlutter, SiMongodb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiRedux, SiScikitlearn, SiStreamlit } from "react-icons/si";
+import { SiC, SiCplusplus, SiDjango, SiExpress, SiFirebase, SiFlask, SiFlutter, SiMongodb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiRedux, SiScikitlearn, SiStreamlit } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 export const Menus = [
@@ -100,6 +100,10 @@ export const skills = [
                 name:'Django',
                 icon:<SiDjango class = "icon" />
             },
+            {
+                name:'Flask',
+                icon:<SiFlask class = "icon" />
+            },
         ]
     },
     {
@@ -190,6 +194,14 @@ export const projects = [
     {
         header:'Web Development',
         projects:[
+            {
+                title:'Streamvid - Streaming Platform',
+                img:require('../../Assets/streamvid.png'),
+                desc:'StreamVid, a cutting-edge movie streaming site, blends React.js, Flask, MongoDB, Redux Toolkit, and CSS. Enjoy a seamless experience with React.js on the front-end, Flask on the back-end, MongoDB for reliable storage, and Redux Toolkit for optimal state management, all wrapped in a sleek CSS design.',
+                techStack:'React Flask MongoDb Redux CSS',
+                github:'https://github.com/aj0911/StreamVid',
+                link:'https://streamvid-beta.vercel.app/'
+            },
             {
                 title:'Buy Market - Ecommerce',
                 img:require('../../Assets/buymarket.png'),
