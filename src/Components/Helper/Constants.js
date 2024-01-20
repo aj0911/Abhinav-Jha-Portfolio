@@ -334,6 +334,15 @@ export const projects = [
                 link:'https://emailspamdetector.streamlit.app/',
                 paper:'https://drive.google.com/file/d/12ZvxwJWak94-t21XT2p6mZmc93cwLxyY/view'
             },
+            {
+                title:'Diet and Home Workout Recommendation System',
+                img:require('../../Assets/dietAndHomeWorkout.png'),
+                desc:`The Diet and Home Workout Recommendation System customizes fitness plans based on age, height, and weight, utilizing advanced algorithms for personalized exercise and diet. Developed with Streamlit, the user-friendly interface ensures seamless navigation, promoting sustained well-being through machine learning-driven adaptability.`,
+                techStack:'Python Numpy Pandas Streamlit',
+                github:'https://github.com/aj0911/Diet-and-Home-Workout-Recommendation-System',
+                link:'https://diet-and-home-workout-recommendation-system.streamlit.app/',
+                // paper:'https://drive.google.com/file/d/12ZvxwJWak94-t21XT2p6mZmc93cwLxyY/view'
+            },
         ]
     },
 ]
