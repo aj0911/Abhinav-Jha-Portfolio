@@ -19,7 +19,7 @@ export const education = [
         time:'2022-2026',
         name:'Delhi Technological University',
         degree:`Bachelor's Degree (B.Tech)`,
-        passingMarks:'9.00 CGPA (Till 2nd Sem)'
+        passingMarks:'9.25 CGPA (Till 3rd Sem)'
     },
     {
         time:'2020-2022',
@@ -36,6 +36,20 @@ export const education = [
 ]
 
 export const experience = [
+    {
+        time:'Feb 2024 - Present',
+        companyName:'Ezinore Pvt. Ltd.',
+        role:'Software Development Engineer (SDE)',
+        desc1:`As a full stack developer at Ezinore Pvt Limited, I specialize in creating innovative solutions for AI-based energy management. My role involves developing both a comprehensive dashboard application and a polished product website for the company. Leveraging my expertise in frontend and backend technologies, I craft user-friendly interfaces that provide actionable insights for energy optimization.`,
+        desc2:`From designing intuitive user experiences to implementing robust backend functionalities, I ensure seamless integration and efficient performance across all platforms. With a keen eye for detail and a passion for cutting-edge technologies, I strive to empower Ezinore and its clients with powerful tools to revolutionize energy management in the digital age.`
+    },
+    {
+        time:'Feb 2024 - Apr 2024',
+        companyName:'DTU - IRD',
+        role:'Web Developer',
+        desc1:`As an intern at the Dean IRD Office of Delhi Technological University (DTU), I am tasked with developing a full-stack MERN (MongoDB, Express.js, React.js, Node.js) ERP portal. This portal serves to manage government-funded projects for professors at DTU, providing comprehensive tools for project tracking, resource management, financial oversight, and reporting.`,
+        desc2:`My responsibilities include frontend and backend development, database management, user interface design, and ensuring seamless functionality across all aspects of the ERP portal.`
+    },
     {
         time:'Sept 2023 - Nov 2023',
         companyName:'Code Clause',
