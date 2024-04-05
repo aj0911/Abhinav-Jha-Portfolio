@@ -1,5 +1,5 @@
 import { FaCss3, FaFigma, FaGit, FaGithub, FaHtml5, FaJava, FaJs, FaNodeJs, FaPython, FaReact } from "react-icons/fa"
-import { SiC, SiCplusplus, SiDjango, SiExpress, SiFirebase, SiFlask, SiFlutter, SiMongodb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiRedux, SiScikitlearn, SiStreamlit } from "react-icons/si";
+import { SiC, SiCplusplus, SiDjango, SiElectron, SiExpress, SiFirebase, SiFlask, SiFlutter, SiMongodb, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiRedux, SiScikitlearn, SiStreamlit } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 export const Menus = [
@@ -168,6 +168,10 @@ export const skills = [
         title:'Other Skills',
         xp:'2021-05-06',
         skill:[
+            {
+                name:'Electron JS',
+                icon:<SiElectron class = "icon" />
+            },
             {
                 name:'Java',
                 icon:<FaJava class = "icon" />
