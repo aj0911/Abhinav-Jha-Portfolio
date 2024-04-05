@@ -31,7 +31,7 @@ export const education = [
         time:'2008-2020',
         name:'Ramakrishna Sr. Sec. School',
         degree:'Matriculation',
-        passingMarks:'90%'
+        passingMarks:'88.6%'
     },
 ]
 
