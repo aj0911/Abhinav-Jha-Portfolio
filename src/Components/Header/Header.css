@@ -63,7 +63,12 @@ header nav .menu::after{
 header nav .menu:hover::after{
     width: 100%;
 }
-
+header nav .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
 header nav button{
     border: 2px solid var(--textSecondaryColor);
     color: var(--textSecondaryColor);
@@ -95,6 +100,9 @@ header .hamburger{
 
 /* For Tablets */
 @media screen and (max-width:999px){
+    header nav .btns{
+        gap: 1rem;
+    }
     header .logo{
         font-size: 3rem;
     }
