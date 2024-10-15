@@ -11,6 +11,8 @@ import {
   FaReact,
 } from "react-icons/fa";
 import {
+  SiAmazonaws,
+  SiAzuredevops,
   SiC,
   SiCplusplus,
   SiDjango,
@@ -24,6 +26,7 @@ import {
   SiNumpy,
   SiPandas,
   SiPostgresql,
+  SiRedis,
   SiRedux,
   SiScikitlearn,
   SiStreamlit,
@@ -47,7 +50,7 @@ export const education = [
     time: "2022-2026",
     name: "Delhi Technological University",
     degree: `Bachelor's Degree (B.Tech)`,
-    passingMarks: "9.25 CGPA (Till 3rd Sem)",
+    passingMarks: "9.18 CGPA (Till 4th Sem)",
   },
   {
     time: "2020-2022",
@@ -65,7 +68,14 @@ export const education = [
 
 export const experience = [
   {
-    time: "Feb 2024 - Present",
+    time: "August 2024 - Present",
+    companyName: "GydeXP",
+    role: "Software Development Engineer (SDE)",
+    desc1: `Redeveloped a full-stack platform for tour guides, implementing authentication (OAuth 2.0), secure document storage (Azure Blob), a search API with filters and fuzzy search, and improving geolocation based search accuracy by 30% using Elasticsearch.`,
+    desc2: `Integrated real-time messaging with WebSockets (typing indicators, notifications), created payment requests, itinerary sharing, and review features, managing confidential documents securely with Azure Blob Storage improving user-guide interactions by 25% and streamlining interactions by 20%.`,
+  },
+  {
+    time: "Feb 2024 - July 2024",
     companyName: "Ezinore Pvt. Ltd.",
     role: "Software Development Engineer (SDE)",
     desc1: `As a full stack developer at Ezinore Pvt Limited, I specialize in creating innovative solutions for AI-based energy management. My role involves developing both a comprehensive dashboard application and a polished product website for the company. Leveraging my expertise in frontend and backend technologies, I craft user-friendly interfaces that provide actionable insights for energy optimization.`,
@@ -77,13 +87,6 @@ export const experience = [
     role: "Web Developer",
     desc1: `As an intern at the Dean IRD Office of Delhi Technological University (DTU), I am tasked with developing a full-stack MERN (MongoDB, Express.js, React.js, Node.js) ERP portal. This portal serves to manage government-funded projects for professors at DTU, providing comprehensive tools for project tracking, resource management, financial oversight, and reporting.`,
     desc2: `My responsibilities include frontend and backend development, database management, user interface design, and ensuring seamless functionality across all aspects of the ERP portal.`,
-  },
-  {
-    time: "Sept 2023 - Nov 2023",
-    companyName: "Code Clause",
-    role: "Full Stack Developer",
-    desc1: `I have been chosen for the position of full stack Developer at CodeClause company. I have been assigned with some projects here, which contains Resume Builder, Weather App and Authentication App using firebase.`,
-    desc2: `I have submited all the three app withing the deadline and gain alot of experience while making these projects. Currently, I am working on the mobile app projects like Barcode scanner, Pdf file viewer and Travel planner app.`,
   },
   {
     time: "June 2023 - Aug 2023",
@@ -201,6 +204,14 @@ export const skills = [
         icon: <SiElectron class="icon" />,
       },
       {
+        name: "Azure",
+        icon: <SiAzuredevops class="icon" />,
+      },
+      {
+        name: "AWS",
+        icon: <SiAmazonaws class="icon" />,
+      },
+      {
         name: "Java",
         icon: <FaJava class="icon" />,
       },
@@ -227,6 +238,10 @@ export const skills = [
       {
         name: "Postgre Sql",
         icon: <SiPostgresql class="icon" />,
+      },
+      {
+        name: "Redis",
+        icon: <SiRedis class="icon" />,
       },
       {
         name: "Figma",
