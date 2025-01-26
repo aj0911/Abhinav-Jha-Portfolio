@@ -27,7 +27,10 @@ const Projects = () => {
                 <div key={index} className={`project ${(animation)?'animetrue':'animefalse'}`}>
                   <div className="top">
                     <a href={project.link} target='_blank'><SiGooglechrome/></a>
-                    <a href={project.github} target='_blank'><SiGithub/></a>
+                    {
+                      project.github && 
+                      <a href={project.github} target='_blank'><SiGithub/></a>
+                    }
                   </div>
                   <img src={project.img} alt="" />
                   <div className="down">

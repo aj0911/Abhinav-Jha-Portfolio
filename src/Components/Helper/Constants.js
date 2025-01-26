@@ -18,6 +18,7 @@ import {
   SiDjango,
   SiElectron,
   SiExpress,
+  SiFastapi,
   SiFirebase,
   SiFlask,
   SiFlutter,
@@ -26,9 +27,12 @@ import {
   SiNumpy,
   SiPandas,
   SiPostgresql,
+  SiPrisma,
   SiRedis,
   SiRedux,
   SiScikitlearn,
+  SiSequelize,
+  SiSocketdotio,
   SiStreamlit,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -68,7 +72,7 @@ export const education = [
 
 export const experience = [
   {
-    time: "August 2024 - Present",
+    time: "August 2024 - January 2025",
     companyName: "GydeXP",
     role: "Software Development Engineer (SDE)",
     desc1: `Redeveloped a full-stack platform for tour guides, implementing authentication (OAuth 2.0), secure document storage (Azure Blob), a search API with filters and fuzzy search, and improving geolocation based search accuracy by 30% using Elasticsearch.`,
@@ -167,6 +171,22 @@ export const skills = [
         name: "Firebase",
         icon: <SiFirebase class="icon" />,
       },
+      {
+        name: "Prisma",
+        icon: <SiPrisma class="icon" />,
+      },
+      {
+        name: "Fast API",
+        icon: <SiFastapi class="icon" />,
+      },
+      {
+        name: "Socket.io",
+        icon: <SiSocketdotio class="icon" />,
+      },
+      {
+        name: "Sequelize",
+        icon: <SiSequelize class="icon" />,
+      },
     ],
   },
   {
@@ -255,6 +275,13 @@ export const projects = [
   {
     header: "Web Development",
     projects: [
+      {
+        title: "GydeXP - Tour and Travel Platfrom",
+        img: require("../../Assets/gydexp.jpeg"),
+        desc: "As an SDE Intern at Gyde Xp, I develop backend APIs and frontend interfaces for connecting users with guides, focusing on search, real-time chat, geolocation, and content management while collaborating with design and product teams.",
+        techStack: "Vite Node PostgreSQL RTKQuery CSS Tailwind Azure Redis SOLID Socket.io",
+        link: "https://gydexp.com",
+      },
       {
         title: "Streamvid - Streaming Platform",
         img: require("../../Assets/streamvid.png"),

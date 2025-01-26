@@ -23,7 +23,7 @@ const Header = () => {
             }
             <div className="btns">
                 <button onClick={()=>window.open(require('../../Assets/CV.pdf'),'_blank')}>CV</button>
-                <button onClick={()=>window.open(require('../../Assets/resume.pdf'),'_blank')}>Resume</button>
+                {/* <button onClick={()=>window.open(require('../../Assets/resume.pdf'),'_blank')}>Resume</button> */}
             </div>
         </nav>
         <div onClick={()=>header.current.classList.toggle('active')} className="hamburger">

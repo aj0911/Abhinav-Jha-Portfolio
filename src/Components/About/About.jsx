@@ -11,7 +11,7 @@ const About = () => {
         <div className="box">
             <div className="left">
                 <p>{aboutMe}</p>
-                <button onClick={()=>window.open(require('../../Assets/resume.pdf'),'_blank')}>
+                <button onClick={()=>window.open(require('../../Assets/CV.pdf'),'_blank')}>
                     <h3>Download CV</h3>
                     <BsCloudDownload className='icon'/>
                 </button>
