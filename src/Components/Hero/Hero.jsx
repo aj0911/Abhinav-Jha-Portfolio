@@ -8,8 +8,8 @@ const Hero = () => {
   return (
     <div id="Hero">
         <div className="left">
-            <a href="https://github.com/aj0911" target='_blank' className='icon'><AiFillGithub/></a> 
-            <a href="https://www.linkedin.com/in/abhinav-jha-709bbb256/" target='_blank' className='icon'><AiFillLinkedin/></a>
+            <a href="https://github.com/aj0911" target='_blank' rel='noreferrer' className='icon'><AiFillGithub/></a> 
+            <a href="https://www.linkedin.com/in/abhinav-jha-709bbb256/" rel='noreferrer' target='_blank' className='icon'><AiFillLinkedin/></a>
             <div className="line"></div>
         </div>
         <div className="content">

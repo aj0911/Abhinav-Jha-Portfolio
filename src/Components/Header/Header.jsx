@@ -14,7 +14,7 @@ const Header = () => {
     })
   return (
     <header ref={header}>
-        <a href='#Hero' className="logo">Aj.</a>
+        <a href='#Hero' className="logo">AJ.</a>
         <nav>
             {
                 Menus.map((menu,index)=>(

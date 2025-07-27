@@ -22,9 +22,13 @@ import {
   SiFirebase,
   SiFlask,
   SiFlutter,
+  SiGooglecloud,
   SiMongodb,
   SiMysql,
+  SiNestjs,
+  SiNextdotjs,
   SiNumpy,
+  SiOpencv,
   SiPandas,
   SiPostgresql,
   SiPrisma,
@@ -34,6 +38,7 @@ import {
   SiSequelize,
   SiSocketdotio,
   SiStreamlit,
+  SiTensorflow,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -47,36 +52,44 @@ export const Menus = [
   "Contact",
 ];
 
-export const aboutMe = `I am a versatile and results-driven professional with a strong background in Machine Learning Engineering and Web & App Development. Currently, I hold the position of Full Stack Developer at GDSC-DTU, where I leverage cutting-edge technologies to develop innovative solutions. In addition, I have contributed as an App Development Intern at Code Clause, gaining valuable experience in creating efficient and user-friendly applications.With expertise in React Native and the MERN Stack, I excel in delivering seamless cross-platform experiences. My proficiency also extends to ASP.NET MVC development, ensuring robust and scalable web applications. I am a proud graduate of BTech DTU'26, where I honed my technical skills and gained a solid foundation in engineering principles.`;
+export const aboutMe = `Hi, I'm <b>Abhinav Jha</b>, a passionate Software Developer and Product Builder with a strong foundation in Computer Science & Electrical Engineering and a consistent academic track record (<b>9.18 CGPA</b> from <b>DTU EE</b>). <br><br>
+
+    I'm currently building <b>Travel Studio</b>, a post-booking hospitality SaaS platform at <b>GydeXP</b>, where I lead <b>backend development</b> and <b>product management</b>.<br><br>
+
+    Over the past few years, I've worked across the full stack — specializing in modern backend systems using <b>NestJS</b>, <b>Firebase</b>, <b>PostgreSQL</b>, and <b>Redis</b>, along with real-time features powered by <b>WebSockets</b> and scalable APIs. I follow <b>clean architecture</b>, <b>SOLID principles</b>, and emphasize <b>performance, security,</b> and <b>maintainability</b> in every project.<br><br>
+
+    Outside of coding, I enjoy <b>problem-solving</b>, <b>gym training</b>, and <b>mentoring junior developers</b>. Whether it's building AI-integrated products, designing robust systems, or crafting seamless user experiences, I love turning ideas into real-world impact.<br><br>
+
+    If you're looking for someone who can blend <b>technical depth</b> with <b>product thinking</b>, let's connect!`;
 
 export const education = [
   {
     time: "2022-2026",
     name: "Delhi Technological University",
     degree: `Bachelor's Degree (B.Tech)`,
-    passingMarks: "9.18 CGPA (Till 4th Sem)",
+    passingMarks: "9.18 CGPA (Till 6th Sem)",
   },
   {
     time: "2020-2022",
     name: "Ramakrishna Sr. Sec. School",
     degree: "High School",
-    passingMarks: "91.6%",
+    passingMarks: "95.5%",
   },
   {
     time: "2008-2020",
     name: "Ramakrishna Sr. Sec. School",
     degree: "Matriculation",
-    passingMarks: "88.6%",
+    passingMarks: "90%",
   },
 ];
 
 export const experience = [
   {
-    time: "August 2024 - January 2025",
+    time: "June 2025 - Present",
     companyName: "GydeXP",
-    role: "Software Development Engineer (SDE)",
-    desc1: `Redeveloped a full-stack platform for tour guides, implementing authentication (OAuth 2.0), secure document storage (Azure Blob), a search API with filters and fuzzy search, and improving geolocation based search accuracy by 30% using Elasticsearch.`,
-    desc2: `Integrated real-time messaging with WebSockets (typing indicators, notifications), created payment requests, itinerary sharing, and review features, managing confidential documents securely with Azure Blob Storage improving user-guide interactions by 25% and streamlining interactions by 20%.`,
+    role: "Product Manager",
+    desc1: ` Leading a full development and design team as Backend Lead and the development of Travel Studio, a SaaS platform for the travel industry. Driving product planning, roadmap execution, and feature prioritization, Acting as the bridge between business goals and technical execution.`,
+    desc2: `Built and launched the entire GydeXP.com platform — frontend, backend, and database — from scratch during the company’s growth phase. Developed core features of the Gyde platform connecting users with local guides. Created REST APIs for user/guide profiles, geolocation search, real-time chat (WebSockets), and reviews. Contributed to system architecture, database modeling, and API documentation.`,
   },
   {
     time: "Feb 2024 - July 2024",
@@ -113,6 +126,14 @@ export const skills = [
     title: "Web Development",
     xp: "2021-02-17",
     skill: [
+      {
+        name: "Next js",
+        icon: <SiNextdotjs class="icon" />,
+      },
+      {
+        name: "Nest js",
+        icon: <SiNestjs class="icon" />,
+      },
       {
         name: "React",
         icon: <FaReact class="icon" />,
@@ -187,10 +208,14 @@ export const skills = [
         name: "Sequelize",
         icon: <SiSequelize class="icon" />,
       },
+      {
+        name: "Prisma ORM",
+        icon: <SiPrisma class="icon" />,
+      },
     ],
   },
   {
-    title: "Machine Learning",
+    title: "Artificial Intelligence",
     xp: "2023-10-06",
     skill: [
       {
@@ -210,6 +235,18 @@ export const skills = [
         icon: <SiPandas class="icon" />,
       },
       {
+        name: "Fast API",
+        icon: <SiFastapi class="icon" />,
+      },
+      {
+        name: "Tensor Flow",
+        icon: <SiTensorflow class="icon" />,
+      },
+      {
+        name: "Open CV",
+        icon: <SiOpencv class="icon" />,
+      },
+      {
         name: "Streamlit",
         icon: <SiStreamlit class="icon" />,
       },
@@ -220,8 +257,8 @@ export const skills = [
     xp: "2021-05-06",
     skill: [
       {
-        name: "Electron JS",
-        icon: <SiElectron class="icon" />,
+        name: "GCP",
+        icon: <SiGooglecloud class="icon" />,
       },
       {
         name: "Azure",
@@ -230,6 +267,10 @@ export const skills = [
       {
         name: "AWS",
         icon: <SiAmazonaws class="icon" />,
+      },
+      {
+        name: "Electron JS",
+        icon: <SiElectron class="icon" />,
       },
       {
         name: "Java",
@@ -279,7 +320,8 @@ export const projects = [
         title: "GydeXP - Tour and Travel Platfrom",
         img: require("../../Assets/gydexp.jpeg"),
         desc: "As an SDE Intern at Gyde Xp, I develop backend APIs and frontend interfaces for connecting users with guides, focusing on search, real-time chat, geolocation, and content management while collaborating with design and product teams.",
-        techStack: "Vite Node PostgreSQL RTKQuery CSS Tailwind Azure Redis SOLID Socket.io",
+        techStack:
+          "Vite Node PostgreSQL RTKQuery CSS Tailwind Azure Redis SOLID Socket.io",
         link: "https://gydexp.com",
       },
       {
@@ -410,7 +452,7 @@ export const projects = [
     ],
   },
   {
-    header: "Machine Learning",
+    header: "Artificial Intelligence",
     projects: [
       {
         title: "Movie Recommendation",
